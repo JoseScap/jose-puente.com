@@ -8,22 +8,32 @@
     "gatsby"
   ],
   "scripts": {
-    "develop": "gatsby develop",
-    "start": "gatsby develop",
-    "build": "gatsby build",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "develop": "rm -r .cache/ ; gatsby develop",
+    "start": "rm -r .cache/ ; gatsby develop",
+    "build": "rm -r .cache/ ; gatsby build",
+    "serve": "rm -r .cache/ ; gatsby serve",
+    "clean": "rm -r .cache/ ; gatsby clean"
   },
   "dependencies": {
-    "gatsby": "^4.12.1",
-    "gatsby-plugin-image": "^2.12.1",
-    "gatsby-plugin-react-helmet": "^5.12.1",
-    "gatsby-plugin-sharp": "^4.12.1",
-    "gatsby-plugin-sitemap": "^5.12.1",
-    "gatsby-source-filesystem": "^4.12.1",
-    "gatsby-transformer-sharp": "^4.12.1",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-helmet": "^6.1.0"
+    "@chakra-ui/gatsby-plugin": "2.0.4",
+    "@chakra-ui/react": "1.8.8",
+    "@emotion/react": "11.9.0",
+    "@emotion/styled": "11.8.1",
+    "@fortawesome/fontawesome-svg-core": "^6.1.1",
+    "@fortawesome/free-regular-svg-icons": "6.1.1",
+    "@fortawesome/free-solid-svg-icons": "6.1.1",
+    "@fortawesome/react-fontawesome": "0.1.18",
+    "framer-motion": "6.3.2",
+    "gatsby": "4.12.1",
+    "gatsby-plugin-fontawesome-css": "1.2.0",
+    "gatsby-plugin-image": "2.12.1",
+    "gatsby-plugin-react-helmet": "5.12.1",
+    "gatsby-plugin-sharp": "4.12.1",
+    "gatsby-plugin-sitemap": "5.12.1",
+    "gatsby-source-filesystem": "4.12.1",
+    "gatsby-transformer-sharp": "4.12.1",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-helmet": "6.1.0"
   }
 }
