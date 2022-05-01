@@ -44,7 +44,7 @@ const IndexPage = () => {
             </Grid>
           </GridItem>
           <GridItem colSpan={2}>
-            <Grid templateColumns={"repeat(2, 1fr)"} gap={6}>
+            <Grid templateColumns={"repeat(2, 1fr)"} gap={6} as={"section"}>
               {
                 MY_SKILLS.map((props, idx) => (
                   <GridItem w={"100%"} key={idx}>
