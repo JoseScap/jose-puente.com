@@ -11,13 +11,15 @@ import {
 // CUSTOM COMPONENTS
 import {
   Profile,
-  Skills
+  Skills,
+  Academic
 } from "../components"
 
 // MOCKS
 import { 
-  MY_SKILLS
-} from "../mocks/skills"
+  MY_SKILLS,
+  MY_ACADEMICS
+} from "../mocks"
 
 // MARKUP
 const IndexPage = () => {
@@ -32,7 +34,14 @@ const IndexPage = () => {
       <Box className="content-wrapper" maxW={1440} margin={"0 auto"} p={"16"}>
         <Grid templateColumns={"repeat(3, 1fr)"} gap={6}>
           <GridItem w={"100%"}>
-            <Profile />
+            <Grid templateColumns={"1fr"} gap={6}>
+              <GridItem w={"100%"}>
+                <Profile />
+              </GridItem>
+              <GridItem w={"100%"}>
+                <Academic careers={MY_ACADEMICS}/>
+              </GridItem>
+            </Grid>
           </GridItem>
           <GridItem colSpan={2}>
             <Grid templateColumns={"repeat(2, 1fr)"} gap={6}>
