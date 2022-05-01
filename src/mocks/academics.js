@@ -7,8 +7,8 @@ const SOY_HENRY = {
 
 const UTN = {
     title: "Fullstack Developer",
-    period: "Apr 2020 - Dec 2020",
-    description: "Immersive bootcamp with +600 coding hours to introduce you to PERN Stack",
+    period: "Apr 2020 - Dec 2021",
+    description: "Software development career with multiple programming languages like C# and Java for the Backend, JS Libraries like ReactJS or VueJS.",
     logo: "images/utn.png"
 }
 
