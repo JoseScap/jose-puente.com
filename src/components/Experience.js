@@ -17,7 +17,7 @@ import {
 
 const Experience = ({ experiences = [] }) => {
   return (
-    <Box bg={"white"} borderRadius={"xl"} p={"5"} as={"section"}>
+    <Box bg={"white"} borderRadius={"xl"} p={"5"} as={"section"} maxW={{ base: "100%", md: 750 }} margin={"0 auto"} h={"100%"}>
       <Heading
         as={"h3"}
         // FONT STYLES

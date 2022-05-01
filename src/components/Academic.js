@@ -17,7 +17,7 @@ import {
 
 const Academic = ({ careers = [] }) => {
   return (
-    <Box bg={"white"} borderRadius={"xl"} p={"5"} as={"section"}>
+    <Box bg={"white"} borderRadius={"xl"} p={"5"} as={"section"} maxW={{ base: "100%", md: 750 }} margin={"0 auto"} h={"100%"}>
       <Heading
         as={"h3"}
         // FONT STYLES
@@ -39,7 +39,7 @@ const Academic = ({ careers = [] }) => {
   )
 }
 
-const AcademicItem = ({ title, period, description, logo }) => {
+const AcademicItem = ({ title, company, period, description, logo }) => {
   return (
     <Box display={"flex"} mt={"10"}>
       <img src={logo} alt="Soy-Henry's log" style={{ width: "80px", height: "80px", display: "inline-block" }}/>
@@ -63,7 +63,7 @@ const AcademicItem = ({ title, period, description, logo }) => {
           // MARGINS
           mt={"3"}
         >
-          { title }
+          { title } at { company }
         </Heading>
         <Text
           // FONT STYLES
