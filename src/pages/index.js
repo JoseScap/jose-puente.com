@@ -28,8 +28,9 @@ import {
 const IndexPage = () => {
   return (
     <main style={{ backgroundColor: "#f0f0f0", minHeight: '100vh' }}>
-      <Helmet>
+      <Helmet htmlAttributes={{ lang: "en" }}>
         <title>Jose Puente</title>
+        <meta name="description" content="Jose Puente, an enthusiastic about personal and professional growth. I'm in love with frontend and backend Javascript technologies." />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet"></link>

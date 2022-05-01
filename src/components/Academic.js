@@ -54,7 +54,7 @@ const AcademicItem = ({ title, company, period, description, logo }) => {
           { period }
         </Text>
         <Heading
-          as={"h5"}
+          as={"h4"}
           // FONT STYLES
           fontFamily={MONTSERRAT_FAMILY}
           fontWeight={600}

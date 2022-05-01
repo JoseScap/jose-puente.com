@@ -15,6 +15,9 @@ import {
   MONTSERRAT_FAMILY
 } from "../constants/STYLES"
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons"
+
 const Profile = () => {
   return (
     <Box bg={"white"} borderRadius={"xl"} p={"5"} as={"section"} w={{ base: "100%", md: "50%", xl: "100%"}} maxW={464} margin={"0 auto"}>
@@ -42,8 +45,7 @@ const Profile = () => {
       >
         Fullstack Software Developer
       </Heading>
-      <Heading
-        as={"h4"}
+      <Text
         // ESTILDOS DE FUENTE
         fontFamily={MONTSERRAT_FAMILY}
         fontWeight={500}
@@ -52,10 +54,9 @@ const Profile = () => {
         // MARGENES
         mt={"8"}
       >
-        info@jose-puente.com
-      </Heading>
-      <Heading
-        as={"h4"}
+        <FontAwesomeIcon icon={faEnvelope}/> info@jose-puente.com
+      </Text>
+      <Text
         // ESTILOS DE FUENTE
         fontFamily={MONTSERRAT_FAMILY}
         fontWeight={500}
@@ -64,8 +65,8 @@ const Profile = () => {
         // MARGENES
         mt={"2.5"}
       >
-        (+54) 381 368-6040
-      </Heading>
+        <FontAwesomeIcon icon={faPhone}/> (+54) 381 368-6040
+      </Text>
       <Text
         // ESTILOS DE FUENTE
         fontFamily={MONTSERRAT_FAMILY}
