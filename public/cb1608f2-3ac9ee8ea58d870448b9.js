@@ -1,0 +1,3 @@
+/*! For license information please see cb1608f2-3ac9ee8ea58d870448b9.js.LICENSE.txt */
+"use strict";(self.webpackChunkjose_puente=self.webpackChunkjose_puente||[]).push([[523],{8014:function(e,n,c){c.d(n,{onQ:function(){return u}});var u={prefix:"fas",iconName:"angle-up",icon:[384,512,[8963],"f106","M352 352c-8.188 0-16.38-3.125-22.62-9.375L192 205.3l-137.4 137.4c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25C368.4 348.9 360.2 352 352 352z"]}}}]);
+//# sourceMappingURL=cb1608f2-3ac9ee8ea58d870448b9.js.map
