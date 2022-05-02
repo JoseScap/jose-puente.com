@@ -12,7 +12,8 @@ import {
 import {
   COLOR_GRAY2,
   COLOR_GRAY3,
-  MONTSERRAT_FAMILY
+  MONTSERRAT_FAMILY,
+  LIGHT_SHADOW
 } from "../constants/STYLES"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -20,7 +21,7 @@ import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons"
 
 const Profile = () => {
   return (
-    <Box bg={"white"} borderRadius={"xl"} p={"5"} as={"section"} w={{ base: "100%", md: "50%", xl: "100%"}} maxW={464} margin={"0 auto"}>
+    <Box bg={"white"} borderRadius={"xl"} p={"5"} as={"section"} w={{ base: "100%", md: "50%", xl: "100%"}} maxW={464} margin={"0 auto"} boxShadow={LIGHT_SHADOW}>
       <StaticImage src="../images/profile.jpeg" alt="Jose Puente's Picture" placeholder="blurred" style={{ borderRadius: "12px" }} />
       <Heading
         as={"h1"}

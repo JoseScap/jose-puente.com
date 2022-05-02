@@ -14,6 +14,7 @@ import {
 import {
   COLOR_BLUE1,
   COLOR_GRAY2,
+  LIGHT_SHADOW,
   MONTSERRAT_FAMILY
 } from "../constants/STYLES"
 
@@ -32,7 +33,7 @@ const Skills = ({ title, skills = [] }) => {
   }
 
   return (
-    <Box bg={"white"} borderRadius={"xl"} p={"5"} h={showSkills ? "fit-content" : "60px"} overflow={"hidden"}>
+    <Box bg={"white"} borderRadius={"xl"} p={"5"} h={showSkills ? "fit-content" : "60px"} overflow={"hidden"} boxShadow={LIGHT_SHADOW}>
       <Box display={"flex"} justifyContent={"space-between"}>
         <Heading
           as={"h5"}
@@ -64,12 +65,12 @@ const Skills = ({ title, skills = [] }) => {
           <FontAwesomeIcon icon={faAngleUp}/>
         </Button>
       </Box>
-      <SkillList skills={skills} />
+      <SkillList skills={skills} showSkills={showSkills}/>
     </Box>
   )
 }
 
-const SkillList = ({ skills = [] }) => {
+const SkillList = ({ skills = [], showSkills }) => {
   return (
     <UnorderedList
       // WITHOUT BULLETS
@@ -82,7 +83,7 @@ const SkillList = ({ skills = [] }) => {
       {
         skills.length > 0 && (
           skills.map(({skill, experience}, idx) => (
-            <ListItem mt={2} key={idx}>
+            <ListItem mt={2} key={idx} display={showSkills ? "block" : "none" }>
               <Box display={"flex"} justifyContent={"space-between"}>
                 <Text
                   // ESTILOS DE FUENTE

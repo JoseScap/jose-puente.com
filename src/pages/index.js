@@ -13,7 +13,9 @@ import {
   Profile,
   Skills,
   Academic,
-  Experience
+  Experience,
+  Projects,
+  Blog
 } from "../components"
 
 // MOCKS
@@ -64,6 +66,12 @@ const IndexPage = () => {
                     ))
                   }
                 </Grid>
+              </GridItem>
+              <GridItem>
+                <Projects />
+              </GridItem>
+              <GridItem>
+                <Blog />
               </GridItem>
             </Grid>
           </GridItem>

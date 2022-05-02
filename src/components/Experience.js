@@ -12,12 +12,13 @@ import {
   COLOR_GRAY1,
   COLOR_GRAY2,
   COLOR_GRAY3,
+  LIGHT_SHADOW,
   MONTSERRAT_FAMILY
 } from "../constants/STYLES"
 
 const Experience = ({ experiences = [] }) => {
   return (
-    <Box bg={"white"} borderRadius={"xl"} p={"5"} as={"section"} maxW={{ base: "100%", md: 750 }} margin={"0 auto"} h={"100%"}>
+    <Box bg={"white"} borderRadius={"xl"} p={"5"} as={"section"} maxW={{ base: "100%", md: 750 }} margin={"0 auto"} h={"100%"} boxShadow={LIGHT_SHADOW}>
       <Heading
         as={"h3"}
         // FONT STYLES

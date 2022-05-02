@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Jose Puente`,
-    siteUrl: `http://tesing.jose-puente.com`
+    siteUrl: `https://jose-puente.com`
   },
   plugins: ["gatsby-plugin-image", "gatsby-plugin-react-helmet", "gatsby-plugin-sitemap", "gatsby-plugin-sharp", "gatsby-transformer-sharp", `gatsby-plugin-fontawesome-css`, {
     resolve: 'gatsby-source-filesystem',
